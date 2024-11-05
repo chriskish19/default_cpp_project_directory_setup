@@ -15,4 +15,12 @@
 <p>In your terminal...</p>
 
 ```powershell
+# runs the script
 PS C:\Users\chris> ./directory_structure.ps1 -dir "C:/create/folders/here" -create
+
+# setup an enviroment variable to run the script from anywhere
+PS C:\Users\chris> [Environment]::SetEnvironmentVariable("directory_structure","C:\script\location\directory_structure.ps1","User")
+
+# once set it can be invoked from the terminal
+PS C:\Users\chris> & $env:directory_structure -dir "C:/create/folders/here" -create
+
