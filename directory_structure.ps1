@@ -504,6 +504,12 @@ if($create_success -eq $false){
 # and place it in the cmake folder
 git clone "https://github.com/chriskish19/CMAKE_BOILERPLATE.git" $cmake_folder.get_inside_this_directory_path().get_full_path()
 
+# remove the .git folder from https://github.com/chriskish19/CMAKE_BOILERPLATE.git
+# its anoyying and prevents being included in the actual cpp project
+# NOTE: this is hack and will be handled better in the future!
+[string]$git_folder_path_string = $cmake_folder.get_inside_this_directory_path().get_full_path() + '\' + ".git"
+Remove-Item -Path $git_folder_path_string -Recurse -Force
+
 
 # Next create subfolders
 ##########################################################################
