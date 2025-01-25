@@ -1,5 +1,5 @@
 <h1>About</h1>
-<p>A powershell script that creates everything needed for a typical c++ project. Includes a cmake file with boilerplate code to get started from my github.</p>
+<p>A powershell script that creates some needed files for a typical c++ project. Includes a cmake file with boilerplate code to get started from my github.</p>
 
 <h1>Prerequisites</h1>
 <li>Atleast Powershell 5.1</li>
@@ -8,7 +8,7 @@
 
 <h1>How to:</h1>
 <li>-dir</li>
-<p>the directory where to create the folders. ./ also works.</p>
+<p>the directory where to create the folders.</p>
 <li>-create</li>
 <p>a flag for creating the given directory (-dir)</p>
 
